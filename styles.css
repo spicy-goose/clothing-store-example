@@ -1,8 +1,9 @@
 /*add flex to all childs of the container class*/
-body{
+html, body{
     height: 100vh;
     width: 100vw;
     margin: 0;
+    position: absolute;
 }
 
 /*add flex to all childs of the container class*/
@@ -18,15 +19,19 @@ body{
 /*set padding*/
 .container > *{
     font-family: 'Roboto', sans-serif;
-    padding-left: 100px;
-    padding-right: 100px;
+
 }
 
 /*Make header flex*/
 .header{
     display: flex;
     align-items: center;
+    padding: 10px;;
 } 
+
+.header > *{
+    text-align: center;
+}
 
 .container > *{
     flex: 1 1 auto;
@@ -65,20 +70,24 @@ li{
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .left-1{
     width: 300px;
+    text-align: center;
 }
 .main-text{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
     margin: 0;
+    text-align: left;
 }
 .main-subtext{
     font-size: 18px;
     color: #E5E7EB;
     margin: 0;
+    text-align: left;
 }
 .main-button{
     background-color: #3882F6;
@@ -89,6 +98,7 @@ li{
     border: none;
 }
 .main-image{
+    padding: 10px;
     width: 350px;
     height: 200px;
 }
@@ -97,15 +107,21 @@ li{
 .content2{
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .subcontent {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .subcontent > *{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 200px;
 }
@@ -117,6 +133,9 @@ li{
     color: #1F2937;
 }
 
+.subcontent > * >p{
+    text-align: center;
+}
 .sub-image1,
 .sub-image2,
 .sub-image3,
@@ -135,7 +154,8 @@ li{
 }
 
 .quote{
-    width: 600px;
+    width: 70%;
+    text-align: center;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
@@ -144,7 +164,7 @@ li{
 }
 .author{
     font-size: 18px;
-    width: 600px;
+    width: 70%;
     color: #1F2937;
     margin: 0;
     padding: 0;
@@ -163,8 +183,8 @@ li{
     color: #F9FAF8;
     background-color: #3882F6;
     border-radius: 3px;
-    width: 800px;
-    height: 80px;
+    width: 90%;
+    height: auto;
     padding: 10px;
 }
 .left-4{
