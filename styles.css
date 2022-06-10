@@ -151,6 +151,52 @@ li{
     text-align: right;
 }
 
+/* Style content 4, call to action */
+.content4, .cta-box{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box{
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 3px;
+    width: 800px;
+    height: 80px;
+    padding: 10px;
+}
+.left-4{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-4 > p{
+    margin: 0;
+    padding: 0;
+}
+.cta-title{
+    font-size: 24px;
+}
+.cta-subtext{
+    font-size: 18px;
+}
+.right-4{
+    width: 200px;
+    text-align: center;
+}
+.sign-up4{
+    background-color: transparent;
+    width: 85px;
+    height: 25px;
+    border-radius: 3px;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    border: solid 2px;
+
+}
 /*add background colors*/
 .header,
 .content1,
