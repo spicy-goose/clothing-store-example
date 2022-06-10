@@ -1,0 +1,242 @@
+/*add flex to all childs of the container class*/
+html, body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+}
+
+/*add flex to all childs of the container class*/
+/*adjust size of window*/
+ .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*set font style*/
+/*set padding*/
+.container > *{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*Make header flex*/
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;;
+} 
+
+.header > *{
+    text-align: center;
+}
+
+.container > *{
+    flex: 1 1 auto;
+}
+
+
+/*style header logo */
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0;
+    padding: 0;
+}
+
+/*style header links*/
+.links-right{
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    gap: 10px;
+}
+
+/*remove bullets*/
+li{
+    list-style-type: none;
+}
+
+
+/*style content1*/
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.left-1{
+    width: 300px;
+    text-align: center;
+}
+.main-text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin: 0;
+    text-align: left;
+}
+.main-subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+    text-align: left;
+}
+.main-button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    width: 85px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+.main-image{
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+/*Add styles to content 2 section*/
+.content2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subcontent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.subcontent > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.subcontent > * >p{
+    text-align: center;
+}
+.sub-image1,
+.sub-image2,
+.sub-image3,
+.sub-image4{
+    width:50px;
+    height: 50px;
+}
+
+/*Style section3 quoute */
+.content3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quote{
+    width: 70%;
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+.author{
+    font-size: 18px;
+    width: 70%;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+/* Style content 4, call to action */
+.content4, .cta-box{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-box{
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 3px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+}
+.left-4{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-4 > p{
+    margin: 0;
+    padding: 0;
+}
+.cta-title{
+    font-size: 24px;
+}
+.cta-subtext{
+    font-size: 18px;
+}
+.right-4{
+    width: 200px;
+    text-align: center;
+}
+.sign-up4{
+    background-color: transparent;
+    width: 85px;
+    height: 25px;
+    border-radius: 3px;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    border: solid 2px;
+
+}
+
+/*style footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    font-size: 12px;
+}
+
+/*add background colors*/
+.header,
+.content1,
+.footer{
+    background-color: #1F2937;
+}
+.content2,
+.content4{
+    background-color: white;
+}
+.content3{
+    background-color: #E5E7EB;
+}
