@@ -94,6 +94,10 @@ li{
 }
 
 /*Add styles to content 2 section*/
+.content2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .subcontent {
     display: flex;
     justify-content: center;
@@ -121,12 +125,37 @@ li{
     height: 50px;
 }
 
+/*Style section3 quoute */
+.content3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quote{
+    width: 600px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+}
+.author{
+    font-size: 18px;
+    width: 600px;
+    color: #1F2937;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
 /*add background colors*/
 .header,
 .content1,
 .footer{
     background-color: #1F2937;
-
 }
 .content2,
 .content4{
