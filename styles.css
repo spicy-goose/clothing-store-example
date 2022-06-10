@@ -197,6 +197,16 @@ li{
     border: solid 2px;
 
 }
+
+/*style footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+    font-size: 12px;
+}
+
 /*add background colors*/
 .header,
 .content1,
