@@ -93,6 +93,34 @@ li{
     height: 200px;
 }
 
+/*Add styles to content 2 section*/
+.subcontent {
+    display: flex;
+    justify-content: center;
+}
+
+.subcontent > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.sub-image1,
+.sub-image2,
+.sub-image3,
+.sub-image4{
+    width:50px;
+    height: 50px;
+}
+
 /*add background colors*/
 .header,
 .content1,
